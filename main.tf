@@ -36,6 +36,10 @@ resource helm_release iwok8scollector {
     name  = "collectorImage.tag"
     value = "8.0.6"
   }
+    set {
+    name  = "targetName"
+    value = "saukotha-k8s"
+  }
 }
 
 provider "helm" {
